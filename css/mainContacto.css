@@ -1,0 +1,132 @@
+
+/*Caja donde estan el formulario y dato contacto
+Abarca el 90% de la pagina*/
+.container-formulario-datos{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 50%;
+    margin: auto;
+}
+/*Caja que contieene el formulario
+abarca el 50% del ancho de contariner-formulario-datos(que ocupa el 90% de la pagina)*/
+.caja-formulario{
+    width: 50%;
+    justify-content: right;
+}
+/* Caja que contiene los datos de la empresa
+abarca el 50% del ancho de container-formulario-datos*/
+.caja-dato-contacto{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    border: 1px solid blanchedalmond;
+
+}
+/* caja con el contenido de la info de la empresa, está dentro de .caja-dato-contacto       */
+.contenido-caja-dato{
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+/*Caja que contiene la iframe de la ubicación*/
+.container-ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin:auto;
+}
+/* iframe que contiene el mapa*/
+iframe{
+    width: 100%;
+    border: 1px solid black;
+    padding-bottom: 50px;
+    margin:20px, 0px, 30px, 0px,  ; /* 10px arriba, 3px derecha, 30px abajo, 5px izquierda */
+}
+
+/*Boton enviar*/
+.input-enviar{
+
+    margin-left: 65%;
+}
+/*Ancho y alto del boton enviar*/
+.input-enviar input{
+
+    width: 80px;
+    height: 30px;
+}
+
+/* Ancho y margin de datos de solicitud para el  formulario*/
+.item-nombreApellido input, .item-edad input,.item-correo input, .item-numero input,
+.item-consulta textarea{
+
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: flex-end;
+
+}
+.item-consulta textarea{
+
+    text-align:start ;
+}
+/*Altura de datos a enviar en el formulario (exluido el textarea)*/
+.item-nombreApellido input, .item-edad input,.item-correo input, .item-numero input {
+
+    height: 40px;
+}
+
+
+/* li que están dentro de contenido-caja-dato*/
+.contenido-caja-dato li{
+    list-style: none;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* h2 que están dentro de contenido-caja-dato*/
+.contenido-caja-dato h2{
+
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+/* li que están dentro de contenido-caja-dato*/
+.lista-información-empresa li{
+
+    margin-bottom: 20px;
+
+}
+
+/*  h2 que hay en el main*/
+main h2{
+    margin-left: 6%;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    color: whitesmoke;
+}
+
+
+/*Animacion de texto */
+@keyframes changeColor {   
+    from { color: red; }  /* Primer fotograma */   
+    to { color: green; }  /* Último fotograma */ 
+} 
+ 
+
+.animacion-contacto{   
+    color: #FFF;   
+
+        animation: changeColor 2s linear infinite alternate;
+} 

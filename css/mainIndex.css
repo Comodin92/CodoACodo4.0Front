@@ -1,0 +1,161 @@
+
+*{
+    box-sizing: border-box;
+}
+
+/*Configuracion de la caja*/
+.caja-contenido-curso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*Fondo de la las cajitas de las cajas de los cursos (como tengo una imagen encima el fondo queda de 
+marco */
+.caja-curso-css3, .caja-curso-html5, .caja-curso-bootstrap {
+    background-image: url(../img/Fondos/fondo\ raro\ oscuro.jpg);
+}
+/* Tanmaño de las imagenes de la caja de cursos*/
+.caja-curso-css3 img, .caja-curso-html5 img, .caja-curso-bootstrap img{
+    width: 300px;
+    height: 200px;
+}
+/* color de los textos en la caja de cursos*/
+.caja-curso-css3 p, .caja-curso-html5 p, .caja-curso-bootstrap p{
+    color:darkorange;
+    }
+
+ /* Margen aplicado a las cajas de cursos*/   
+.caja-curso-css3, .caja-curso-html5, .caja-curso-bootstrap{
+
+    margin: 10px;
+}
+/*formato de parrafos*/
+p{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Formato de los parrafos dentro de dicha caja*/
+.section-container p{
+
+    font-size: 50px;
+}
+
+/*Formato de caja .logo-principal*/
+.logo-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Formato de imagenes que estan dentro de .logo-principal*/
+.logo-principal img{
+    width: 30%;
+    border-radius: 50%;
+    margin: 20px;
+
+}
+
+/*Formato de los h2 que están dentro de .logo-principal*/
+.logo-principal h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    color: blanchedalmond;
+}
+
+/* Alineación de texto de la caja .descripcion-curso*/
+.descripcion-curso{
+    text-align: center;
+}
+
+
+/*Formato de h2 dentro de .descripcion-curso*/
+.descripcion-curso h2{
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+/*formato de li de la caja .info-front, por ejemplo sacandola las viñetas*/
+.info-front li{
+    list-style: none;
+    text-decoration: white;
+    font-family: fantasy;
+    color: whitesmoke;
+    font-size: 25px;
+}
+.fa-graduation-cap{
+    background-color:transparent;
+    font-size: 40px;
+    color: white;
+}
+/*Aca las difentes medias o formatos dependiendo del tamaño de la pagina
+rangos 0 a 400px, 401 a 1200 px y 12001 px en adelante
+Por favor de poder mejorarlo hagamelo saber que me interesa mucho este tema*/
+@media screen and (max-width:400px){
+    .logo-principal img{
+        width: 80px;
+        height: 40px;
+    }
+    .logo-principal h2{
+        font-size: 20px;
+    }
+    .caja-curso-html5 img, .caja-curso-css3 img, .caja-curso-bootstrap img{
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        height: 50px;
+    }  
+    .caja-curso-html5 p, .caja-curso-css3 p, .caja-curso-bootstrap p{
+
+    font-size: 10px;
+    }
+    .descripcion-curso h2{
+        font-size: 30px;
+        color: burlywood;
+    }
+    .info-front li{
+        font-size: 25px;
+        color: burlywood;
+    }
+    .fa-graduation-cap{
+        background-color:transparent;
+        font-size: 40px;
+        color: burlywood;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width: 1200px){
+    .logo-principal img{
+        width: 400px;
+        height: 150px;
+    }
+    .logo-principal h2{
+        font-size: 30px;
+    }
+    .caja-curso-html5 img, .caja-curso-css3 img, .caja-curso-bootstrap img{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 250px;
+    }   
+    .caja-curso-html5 p, .caja-curso-css3 p, .caja-curso-bootstrap p{
+
+    font-size: 30px;
+    }
+    .descripcion-curso h2{
+        font-size: 40px;
+        color: cyan;
+    }
+    .info-front li{
+        font-size: 35px;
+        color: cyan;
+    }
+    .fa-graduation-cap{
+        background-color:transparent;
+        font-size: 40px;
+        color: cyan;
+    }
+}

@@ -1,0 +1,87 @@
+body{
+     box-sizing: border-box;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-size: 3em;
+}
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Formato de .container-grid*/
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 2rem;
+}
+/* Formato de las imagenes donde puse la clase .item-img
+Acá mi duda es que tanto conviene poner muchas clases
+por ejemplo a esta imagen puedo acceder como .item-hobbie img 
+no se cual sería la más optima*/
+.item-img{
+    width: 80%;
+    height: 60%;
+    border-radius: 10%;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+/*Color de fondo de .item-hobbie. Uso RGB como para hacer algo distinto
+.item-hobbie{
+
+    background: rgb(red, green, blue);
+}
+*/
+.item-hobbie img{
+    align-items: center;
+}
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*margin centrado para corregir un error*/
+.arriba-centrado{
+margin-top: -9px;
+}
+
+/*Conversión de un listado con viñetas a un listado normal*/
+.comunicado-Covid li{
+    list-style: none;
+    color: whitesmoke; 
+   text-align: center;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Formato parrafos dentro de .comunicado-Covid*/
+.comunicado-Covid p{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+/*Formato de parrafos en .item-text*/
+.item-text p{
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/*Formato de h3 en .item-text*/
+.item-text h3{
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Caja superior que la convierto en flexbox para poder posicionar a sus hijos uno al lado del otro*/
+.caja-superior{
+    display: flex;
+    flex-wrap: wrap; /*Si no hay espacio andate para abajo*/
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* caja donde tengo 3 objetos una al lado del otro*/
+.caja-inferior{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+/* organizando divs de ambas cajas ("marcos") de las gifcards */
+.caja-superior div, .caja-inferior div{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Formato de las cajas donde tengo cada conocimiento*/
+.caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
+
+    border-radius: 7%;
+    border: 2px solid black;
+    background-image: url(../img/Fondos/fongoNegro.jpg) ;
+
+} 
+
+/*Tamaño de las imagenes*/
+img{
+    width: 200px;
+    height: 150px;
+}
+
+/*Intento de transicion*/
+
+img:hover{
+    border-radius: 5px;
+    width: 250px;
+    height: 200px;
+    border: 5px solid springgreen;
+
+    transition-property:all;
+    transition-duration: 0.9s;
+    transition-timing-function:  ease-in;
+    transition-delay: 0.5s;
+}
+
+.caja1 img, .caja2 img, .caja3 img, .caja4 img, .caja5 img, .caja6 img{
+    transition: width 4s;
+
+}

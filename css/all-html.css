@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+  /*background-color: rgb(223, 193, 193);*/
+  background-image: url(../img/Fondos/fondofinal.png);
+
+  
+}
